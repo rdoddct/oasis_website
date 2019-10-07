@@ -585,17 +585,15 @@ a {
 }
 
 .login-modal-wrapper {
-  position: fixed;
-  left: 0px;
+  position: absolute;
+  left: auto;
   top: 10%;
-  right: 0%;
+  right: 3%;
   bottom: auto;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  width: 375%;
-  height: 334px;
+  z-index: auto;
+  display: none;
+  width: 372px;
+  height: 259px;
   margin-top: 0px;
   padding-top: 20px;
   padding-bottom: 20px;
@@ -612,7 +610,16 @@ a {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
+  grid-auto-columns: 1fr;
+  grid-column-gap: 16px;
+  grid-row-gap: 16px;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: auto auto;
+  grid-template-rows: auto auto;
+  border-radius: 3px;
   background-color: #ed3833;
+  box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.28);
   color: #fff;
 }
 
@@ -1081,6 +1088,142 @@ a {
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
+}
+
+.form-block {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+}
+
+.form {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 75%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.submit-button-2 {
+  width: 100%;
+  margin-top: 9px;
+  border-radius: 20px;
+  background-color: #fff;
+  color: #ed3833;
+}
+
+.heading-18 {
+  text-align: center;
+}
+
+.text-field-4 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 20px;
+  background-color: hsla(0, 0%, 100%, 0.43);
+  color: #fff;
+}
+
+.text-field-4::-webkit-input-placeholder {
+  background-image: url('../images/Phone.png');
+  background-position: 0px 0px;
+  background-size: 16px 16px;
+  background-repeat: no-repeat;
+  color: #fff;
+  text-indent: 30px;
+  white-space: normal;
+}
+
+.text-field-4:-ms-input-placeholder {
+  background-image: url('../images/Phone.png');
+  background-position: 0px 0px;
+  background-size: 16px 16px;
+  background-repeat: no-repeat;
+  color: #fff;
+  text-indent: 30px;
+  white-space: normal;
+}
+
+.text-field-4::-ms-input-placeholder {
+  background-image: url('../images/Phone.png');
+  background-position: 0px 0px;
+  background-size: 16px 16px;
+  background-repeat: no-repeat;
+  color: #fff;
+  text-indent: 30px;
+  white-space: normal;
+}
+
+.text-field-4::placeholder {
+  background-image: url('../images/Phone.png');
+  background-position: 0px 0px;
+  background-size: 16px 16px;
+  background-repeat: no-repeat;
+  color: #fff;
+  text-indent: 30px;
+  white-space: normal;
+}
+
+.login-dialog-separator {
+  position: relative;
+  left: 45px;
+  right: 0px;
+  width: 75%;
+  height: 2px;
+  background-color: #fff;
+}
+
+.container-8 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: stretch;
+  -webkit-align-items: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+}
+
+.button-2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 20px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  border: 2px solid #fff;
+  border-radius: 20px;
+  background-color: transparent;
 }
 
 @media (max-width: 991px) {
