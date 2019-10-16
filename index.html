@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!--  This site was created in Webflow. http://www.webflow.com  -->
-<!--  Last Published: Mon Oct 07 2019 20:47:50 GMT+0000 (UTC)  -->
+<!--  Last Published: Wed Oct 16 2019 03:20:33 GMT+0000 (UTC)  -->
 <html data-wf-page="5d94e5f6a633d3a1ab0c6f0f" data-wf-site="5d94e5f6a633d333a80c6f0e">
 <head>
   <meta charset="utf-8">
@@ -18,42 +18,127 @@
   <link href="images/webclip.png" rel="apple-touch-icon">
 </head>
 <body class="body">
-  <div data-collapse="medium" data-animation="default" data-duration="400" id="navbar" class="navbar-2 w-nav">
-    <div class="container-3 w-container"><a href="#" class="w-nav-brand"><img src="images/Logo.png" alt="" class="image-2"></a>
-      <nav role="navigation" class="w-nav-menu"><a href="#" class="nav-link w-nav-link">INSURANCES</a><a href="#" class="nav-link w-nav-link">IN THE NEWS</a><a href="#" class="nav-link w-nav-link">HOW TO BUY</a><a href="#" class="nav-link w-nav-link">ABOUT</a><a href="#" class="nav-link w-nav-link">UPDATES</a><a href="#" class="nav-link w-nav-link">CONTACT</a><a href="#" class="nav-link w-nav-link">LOGIN</a><a href="#" data-w-id="d8481982-418e-d5de-4365-5a30fac51033" class="nav-link w-nav-link"><strong class="buy-nav">BUY NOW</strong></a></nav>
-      <div class="w-nav-button">
-        <div class="icon w-icon-nav-menu"></div>
+  <section id="Buy-Now-Modal" class="buy-now-modal" data-ix="buy-now-modal-initial-state">
+    <div class="container-8 w-container">
+      <div class="new-quote-intro-logo"><img src="images/Logo.png" alt="" class="image-14"></div>
+      <div class="new-quote-intro-header">
+        <h2 class="new-quote-intro-heading">NEW MOTOR QUOTE</h2>
+      </div>
+      <div class="new-quote-intro-text">
+        <p class="new-quote-intro-text">Welcome to Oasis Insurance. If you are you looking for the best price for your motor vehicle, then you are at the right place. We provide unparalleled end-to-end service when it comes to motor claims and also have 100% proven record of settlement ratio</p>
+      </div>
+      <div class="new-quote-intro-button"><a href="#" class="intro-get-started-button w-button">GET STARTED</a><a href="#" class="button-4 w-button">Terms &amp; Conditions</a>
+        <div class="div-block-40"><img src="images/Close.png" alt="" class="image-15" data-ix="close-new-quote-intro"></div>
       </div>
     </div>
-  </div>
-  <section id="Login-Modal-Wrapper" data-w-id="3f39d6b3-ac9e-6dd3-6c64-ab614e9a9a4a" style="display:none" class="login-modal-wrapper">
-    <div class="container-8 w-container">
+  </section>
+  <div data-collapse="medium" data-animation="default" data-duration="400" id="navbar" class="navbar-2 w-nav">
+    <div class="container-3 w-container">
+      <nav role="navigation" class="nav-menu w-nav-menu">
+        <div data-delay="0" class="w-dropdown">
+          <div class="w-dropdown-toggle">
+            <div class="icon-3 w-icon-dropdown-toggle"></div>
+            <div class="text-block-9">INSURANCES</div>
+          </div>
+          <nav class="w-dropdown-list"><a href="motor-insurance.html" class="dropdown-link-4 w-dropdown-link">MOTOR</a><a href="home-insurance.html" class="dropdown-link-5 w-dropdown-link">HOME</a><a href="travel-insurance.html" class="dropdown-link-6 w-dropdown-link">TRAVEL</a></nav>
+        </div><a href="in-the-news.html" class="nav-link w-nav-link">IN THE NEWS</a><a href="how-to-buy.html" class="nav-link w-nav-link">HOW TO BUY</a>
+        <div class="div-block-39"><a href="#" class="w-nav-brand"><img src="images/Logo.png" alt="" class="image-2"></a></div><a href="#" class="nav-link w-nav-link">ABOUT</a><a href="#" class="nav-link w-nav-link">UPDATES</a><a href="#" class="nav-link w-nav-link">CONTACT</a></nav>
+      <div class="menu-button w-nav-button">
+        <div class="icon w-icon-nav-menu"></div>
+      </div>
+      <div><img src="images/Logo.png" alt="" class="image-13"></div>
+    </div><a href="#" class="nav-buy-now w-nav-link" data-ix="show-hide-login-modal"><strong class="buy-nav">LOGIN</strong></a><a href="#" class="button-3 w-button" data-ix="show-buy-now-modal">BUY NOW</a></div>
+  <section id="Login-Modal-Wrapper" data-w-id="3f39d6b3-ac9e-6dd3-6c64-ab614e9a9a4a" class="login-modal-wrapper">
+    <div class="login-modal-state-1 w-container">
       <div class="form-block w-form">
-        <form id="email-form" name="email-form" data-name="Email Form" class="form"><input type="tel" class="text-field-4 w-input" maxlength="256" name="name" data-name="Name" placeholder="Enter Phone Number" id="name" required=""><input type="submit" value="Submit" data-wait="Please wait..." class="submit-button-2 w-button"></form>
-        <div class="w-form-done">
-          <div>Thank you! Your submission has been received!</div>
+        <form id="email-form" name="email-form" data-name="Email Form" class="form"><input type="tel" class="phone-number-field w-input" maxlength="256" name="name" data-name="Name" placeholder="Enter Phone Number" id="name" required="">
+          <div class="login-otp-text"></div><input type="submit" value="Login With Phone Number" data-wait="Please wait..." data-w-id="349fb3d9-1996-b96e-2fd6-6bf56d5ed4f8" class="submit-button-2 w-button"></form>
+        <div class="success-message w-form-done">
+          <div class="text-block-7">You have been sent an OTP code to your email to continue signing in.</div>
         </div>
-        <div class="w-form-fail">
-          <div>Oops! Something went wrong while submitting the form.</div>
+        <div class="error-message w-form-fail">
+          <div class="text-block-6">Oops! Something went wrong while submitting the form.</div>
         </div>
       </div>
       <div class="login-dialog-separator">
-        <div><a href="#" class="button-2 w-button">GUEST USER</a></div>
+        <div class="guest-user-button"><a href="#" class="button-2 w-button">GUEST USER</a></div>
+      </div>
+    </div>
+  </section>
+  <section id="Login-Modal-Wrapper" class="login-modal-wrapper-2">
+    <div class="login-modal-state-2 w-container">
+      <div class="form-block-otp w-form">
+        <form id="email-form" name="email-form" data-name="Email Form" class="form"><input type="tel" class="phone-number-field w-input" maxlength="256" name="Phone-Number" data-name="Phone Number" placeholder="Enter Phone Number" id="Phone-Number" required="">
+          <div class="login-otp-text">
+            <p class="paragraph-9">OTP is sent to your registered Email ID and mobile number, please enter the OTP to proceed further.</p>
+          </div><input type="number" class="otp w-input" maxlength="256" name="OTP-Capture" data-name="OTP Capture" placeholder="Enter OTP" id="OTP-Capture" required=""><a href="#" class="text-button w-button">Regenerate OTP</a>
+          <div class="login-dialog-separator"></div><input type="submit" value="Submit" data-wait="Please wait..." class="submit-button-2 w-button"></form>
+        <div class="success-message w-form-done">
+          <div class="text-block-7">You have been sent an OTP code to your email to continue signing in.</div>
+        </div>
+        <div class="error-message w-form-fail">
+          <div class="text-block-6">Oops! Something went wrong while submitting the form.</div>
+        </div>
       </div>
     </div>
   </section>
   <div class="hero">
+    <div id="Motor-Sign-In-Modal" class="motor-sign-in w-container" data-ix="hide-motor-modal">
+      <div><img src="images/Close.png" alt="" class="image-11" data-ix="hide-motor-modal"></div>
+      <div class="div-block-37">
+        <div class="w-form">
+          <form id="wf-form-Motor-Login-Form" name="wf-form-Motor-Login-Form" data-name="Motor Login Form"><input type="number" class="plate-number-field w-input" maxlength="256" name="License-Number" data-name="License Number" placeholder="ENTER PLATE NUMBER" id="License-Number"><input type="submit" value="Submit" data-wait="Please wait..." class="login-button-2 w-button">
+            <div class="div-block-38"></div><input type="submit" value="BUY NOW" data-wait="Please wait..." class="new-policy-button w-button"></form>
+          <div class="w-form-done">
+            <div>Thank you! Your submission has been received!</div>
+          </div>
+          <div class="w-form-fail">
+            <div>Oops! Something went wrong while submitting the form.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="Motor-Sign-In-Modal" class="medical-sign-in w-container" data-ix="hide-home-modal">
+      <div><img src="images/Close.png" alt="" class="image-11" data-ix="hide-medical-modal"></div>
+      <div class="div-block-37">
+        <div class="w-form">
+          <form id="wf-form-Motor-Login-Form" name="wf-form-Motor-Login-Form" data-name="Motor Login Form"><input type="tel" class="phone-number-field w-input" maxlength="256" name="License-Number-2" data-name="License Number 2" placeholder="ENTER PHONE NUMBER" id="License-Number-2"><input type="submit" value="Submit" data-wait="Please wait..." class="login-button-2 w-button">
+            <div class="div-block-38"></div><input type="submit" value="BUY NOW" data-wait="Please wait..." class="new-policy-button w-button"></form>
+          <div class="w-form-done">
+            <div>Thank you! Your submission has been received!</div>
+          </div>
+          <div class="w-form-fail">
+            <div>Oops! Something went wrong while submitting the form.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="Motor-Sign-In-Modal" class="home-sign-in w-container" data-ix="hide-home-modal">
+      <div><img src="images/Close.png" alt="" class="image-11" data-ix="hide-home-modal"></div>
+      <div class="div-block-37">
+        <div class="w-form">
+          <form id="wf-form-Motor-Login-Form" name="wf-form-Motor-Login-Form" data-name="Motor Login Form"><input type="tel" class="phone-number-field w-input" maxlength="256" name="License-Number-2" data-name="License Number 2" placeholder="ENTER PHONE NUMBER" id="License-Number-2"><input type="submit" value="Submit" data-wait="Please wait..." class="login-button-2 w-button">
+            <div class="div-block-38"></div><input type="submit" value="BUY NOW" data-wait="Please wait..." class="new-policy-button w-button"></form>
+          <div class="w-form-done">
+            <div>Thank you! Your submission has been received!</div>
+          </div>
+          <div class="w-form-fail">
+            <div>Oops! Something went wrong while submitting the form.</div>
+          </div>
+        </div>
+      </div>
+    </div>
     <div class="heroheader w-container">
       <h1 class="hero-heading">WHAT DO YOU WANT TO INSURE?</h1>
     </div>
     <div class="herobuttons w-container">
-      <div class="herobuttonblock"><img src="images/Motor.png" alt="" class="herobuttonicon">
+      <div class="herobuttonblock" data-ix="show-motor-modal"><img src="images/Motor.png" alt="" class="herobuttonicon">
         <div class="herobuttontext">Motor</div>
       </div>
-      <div class="herobuttonblock"><img src="images/Medical.png" alt="" class="herobuttonicon">
+      <div class="herobuttonblock" data-ix="show-medical-modal"><img src="images/Medical.png" alt="" class="herobuttonicon">
         <div class="herobuttontext">Medical</div>
       </div>
-      <div class="herobuttonblock"><img src="images/Home.png" alt="" class="herobuttonicon">
+      <div class="herobuttonblock" data-ix="show-home-modal"><img src="images/Home.png" alt="" class="herobuttonicon">
         <div class="herobuttontext">Home</div>
       </div>
     </div>
@@ -131,6 +216,9 @@
       <div class="easy-block-img"><img src="images/Frame-4.png" width="651" srcset="images/Frame-4-p-500.png 500w, images/Frame-4-p-800.png 800w, images/Frame-4.png 830w" sizes="(max-width: 767px) 100vw, (max-width: 991px) 51vw, 50vw" alt="" class="image-5"></div>
     </div>
   </div>
+  <div class="video">
+    <div style="padding-top:56.27659574468085%" id="w-node-63754cc63153-ab0c6f0f" class="w-video w-embed"><iframe class="embedly-embed" src="https://cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fplayer.vimeo.com%2Fvideo%2F366140537%3Fapp_id%3D122963&dntp=1&url=https%3A%2F%2Fvimeo.com%2F366140537&image=https%3A%2F%2Fi.vimeocdn.com%2Fvideo%2F822088726_1280.jpg&key=96f1f04c5f4143bcb0f2e68c87d65feb&type=text%2Fhtml&schema=vimeo" scrolling="no" frameborder="0" allow="autoplay; fullscreen" allowfullscreen="true"></iframe></div>
+  </div>
   <div class="quotes">
     <div class="container-6 w-container">
       <div class="div-block-16">
@@ -139,6 +227,12 @@
       <div class="div-block-16">
         <blockquote class="block-quote">“I greatly appreciate your time and effort for my request insurance claim utmost earliest time you can offer for my personal rating, 4.5””<br><br>‍<br>‍<br>– Olimar Bandico</blockquote>
       </div>
+    </div>
+  </div>
+  <div class="featured-section">
+    <div class="advertisement-section w-container">
+      <h1 class="heading-18">INSERT FEATURED PRODUCT / ADVERTISEMENT</h1>
+      <p class="paragraph-10">Section for a featured product or advertisement</p>
     </div>
   </div>
   <div class="partners-logo">
@@ -151,11 +245,9 @@
     <div class="container-7 w-container">
       <div class="footer-block"><img src="images/Footer-logo.png" alt=""></div>
       <div class="div-block-17">
-        <div class="footer-header">INSURANCE OFFERINGS</div>
         <div class="div-block-18">
-          <div class="footer-link">Motor Insurance</div>
-          <div class="footer-link">Home Insurance</div>
-          <div class="footer-link">Travel Insurance</div>
+          <div class="footer-link">Careers</div>
+          <div class="footer-link">Sitemap</div>
         </div>
       </div>
       <div class="div-block-19">
@@ -169,8 +261,7 @@
       <div class="div-block-20">
         <div class="footer-header">FOLLOW US ON SOCIAL</div>
         <div class="div-block-18">
-          <div class="footer-content">We are now on social media. Connect and follow us to get updates and the latest news and promotions</div>
-          <div class="footer-link"><img src="images/Facebook.png" alt=""><img src="images/Twitter.png" alt=""><img src="images/Twitter.png" alt=""></div>
+          <div class="footer-link"><img src="images/Facebook.png" alt="" class="image-17"><img src="images/Twitter.png" alt="" class="image-18"><img src="images/Linked-IN.png" alt="" class="image-19"><img src="images/Pinterest.png" alt="" class="image-20"><img src="images/Youtube.png" alt="" class="image-16"></div>
         </div>
       </div>
     </div>
