@@ -194,22 +194,33 @@ a {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  padding: 8px 170px;
+  padding: 8px 0px;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
 }
 
 .herobuttonblock {
-  display: block;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   width: auto;
   height: auto;
   min-height: 85px;
   min-width: 185px;
-  margin-right: auto;
-  margin-left: auto;
+  margin-right: 10px;
+  margin-left: 10px;
+  padding-left: 0px;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-flex: 0;
   -webkit-flex: 0 0 auto;
   -ms-flex: 0 0 auto;
@@ -229,13 +240,13 @@ a {
   left: 28px;
   display: block;
   min-width: 70px;
-  margin-top: 32px;
-  margin-left: 65px;
+  margin-top: 30px;
+  margin-left: 73px;
   font-family: Montserrat, sans-serif;
   color: #000;
-  font-size: 25px;
+  font-size: 20px;
   font-weight: 400;
-  text-align: center;
+  text-align: left;
 }
 
 .herobuttontext:hover {
@@ -245,9 +256,15 @@ a {
 .herobuttonicon {
   position: absolute;
   display: block;
+  width: 42px;
+  height: 42px;
   margin-top: 21px;
   margin-right: 1px;
   margin-left: 15px;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 auto;
+  -ms-flex: 0 auto;
+  flex: 0 auto;
 }
 
 .container-3 {
@@ -556,7 +573,7 @@ a {
   min-width: 372px;
   margin-top: 0px;
   padding-top: 20px;
-  padding-bottom: 8%;
+  padding-bottom: 3%;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
@@ -1137,10 +1154,10 @@ a {
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
   -webkit-align-items: center;
   -ms-flex-align: center;
@@ -1247,7 +1264,7 @@ a {
   width: 100%;
   height: 2px;
   margin-top: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
@@ -1304,14 +1321,21 @@ a {
   background-color: transparent;
 }
 
-.motor-sign-in {
+.hero-sign-in {
   position: absolute;
-  left: 22%;
-  top: 18%;
-  right: 55%;
-  bottom: 51%;
+  left: 35%;
+  top: 25%;
+  right: 32%;
+  bottom: 42%;
   z-index: 99999;
-  display: none;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   border-radius: 3px;
   background-color: #ed3833;
 }
@@ -1333,6 +1357,7 @@ a {
 }
 
 .plate-number-field {
+  padding-right: 75px;
   padding-left: 58px;
   border-radius: 20px;
   background-color: hsla(0, 0%, 100%, 0.43);
@@ -1367,6 +1392,7 @@ a {
 }
 
 .new-policy-button {
+  display: inline-block;
   width: 100%;
   margin-top: 20px;
   border: 1px solid #fff;
@@ -1408,11 +1434,16 @@ a {
 }
 
 .guest-user-button {
+  position: static;
+  left: 8px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   min-width: 100%;
+  margin-right: 0%;
+  margin-left: 0%;
+  padding-top: 0px;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
@@ -1421,6 +1452,7 @@ a {
   -webkit-align-items: flex-start;
   -ms-flex-align: start;
   align-items: flex-start;
+  border: 1px none #fff;
 }
 
 .login-otp-text {
@@ -1428,6 +1460,10 @@ a {
   max-width: 350px;
   min-height: auto;
   min-width: 250px;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
+  align-self: center;
 }
 
 .submit-button-2 {
@@ -2040,8 +2076,9 @@ a {
 
 .image-26 {
   position: relative;
-  right: -30px;
+  right: -24%;
   margin-top: 60px;
+  margin-left: 0px;
   padding-bottom: 40px;
 }
 
@@ -2187,6 +2224,7 @@ a {
 
 .image-30 {
   display: block;
+  cursor: pointer;
 }
 
 .column-9 {
@@ -2252,6 +2290,8 @@ a {
 }
 
 .slider-header {
+  position: static;
+  left: 3px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2259,6 +2299,7 @@ a {
   max-height: 16%;
   max-width: 50%;
   margin-top: 66px;
+  margin-left: 240px;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
@@ -4274,6 +4315,109 @@ a {
   grid-template-rows: 20px 20px 20px 20px 20px 20px 20px 20px 20px 20px 20px 20px 20px 20px 20px 20px;
 }
 
+.login-button {
+  padding-right: 40px;
+  padding-left: 40px;
+  border-radius: 20px;
+  background-color: #fff;
+  color: #ed3833;
+}
+
+.guest-user-button {
+  position: static;
+  left: 0%;
+  right: 0%;
+  padding-top: 10px;
+  padding-right: 70px;
+  padding-left: 70px;
+  border-style: solid;
+  border-radius: 20px;
+  background-color: transparent;
+}
+
+.div-block-91 {
+  margin-top: 14px;
+}
+
+.hero-login-wrapper {
+  position: fixed;
+  z-index: 9999;
+  display: none;
+  width: 100%;
+  height: 100%;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.77);
+}
+
+.error-message-4 {
+  margin-top: 47px;
+}
+
+.herobuttontext2line {
+  position: static;
+  left: 28px;
+  display: block;
+  min-width: 70px;
+  margin-top: 20px;
+  margin-left: 65px;
+  font-family: Montserrat, sans-serif;
+  color: #000;
+  font-size: 20px;
+  font-weight: 400;
+  text-align: left;
+}
+
+.herobuttontext2line:hover {
+  font-weight: 400;
+}
+
+.link-block {
+  position: static;
+}
+
+.newlinkblock {
+  position: static;
+}
+
+.lightbox-link {
+  position: static;
+}
+
+.lightbox-link-2 {
+  position: static;
+}
+
+.lightbox-link-3 {
+  position: static;
+}
+
+.lightbox-link-4 {
+  position: static;
+}
+
+.lightbox-link-5 {
+  position: static;
+}
+
+.link-block-2 {
+  position: static;
+}
+
+.link-block-3 {
+  position: static;
+}
+
+.link-block-4 {
+  position: static;
+}
+
 html.w-mod-js *[data-ix="buy-now-modal-initial-state"] {
   display: none;
 }
@@ -4293,6 +4437,9 @@ html.w-mod-js *[data-ix="buy-now-modal-initial-state"] {
   }
   .nav-link {
     display: block;
+  }
+  .hero {
+    padding-left: 0px;
   }
   .icon {
     color: #fff;
@@ -4543,6 +4690,12 @@ html.w-mod-js *[data-ix="buy-now-modal-initial-state"] {
     margin-bottom: 0px;
     padding-bottom: 2px;
   }
+  .image-25 {
+    right: 17px;
+  }
+  .image-26 {
+    right: -6%;
+  }
   .container-9 {
     padding-top: 20px;
   }
@@ -4680,6 +4833,7 @@ html.w-mod-js *[data-ix="buy-now-modal-initial-state"] {
     display: flex;
     min-height: 0vh;
     min-width: 0vh;
+    padding-bottom: 64px;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
     -webkit-flex-direction: row;
@@ -5097,7 +5251,10 @@ html.w-mod-js *[data-ix="buy-now-modal-initial-state"] {
     z-index: 9999;
   }
   .image-13 {
-    left: 42%;
+    left: 24%;
+  }
+  .image-25 {
+    right: 28px;
   }
   .nav-login-button {
     right: 2%;
@@ -5238,6 +5395,23 @@ html.w-mod-js *[data-ix="buy-now-modal-initial-state"] {
   }
   .grid {
     grid-row-gap: 23px;
+  }
+  .herobuttontext2line {
+    position: static;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 0px;
+    padding-top: 0px;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
   }
 }
 
@@ -5467,16 +5641,16 @@ html.w-mod-js *[data-ix="buy-now-modal-initial-state"] {
     min-width: 100%;
   }
   .nav-buy-now-button {
-    left: 33%;
-    right: 36%;
+    left: 53%;
+    right: 18%;
     display: block;
   }
   .nav-menu {
     z-index: 9999;
   }
   .image-13 {
-    left: 34%;
-    top: 74px;
+    left: 17%;
+    top: 1px;
     margin-right: 0px;
     padding-right: 0px;
     padding-left: 0px;
@@ -5496,6 +5670,12 @@ html.w-mod-js *[data-ix="buy-now-modal-initial-state"] {
   .new-quote-intro-text {
     font-size: 1.012em;
     line-height: 1.3em;
+  }
+  .image-25 {
+    right: 9px;
+  }
+  .nav-login-button {
+    right: -1%;
   }
   .doucment-upload-section {
     left: 0%;
@@ -5583,4 +5763,8 @@ html.w-mod-js *[data-ix="buy-now-modal-initial-state"] {
     -ms-grid-columns: 0.5fr 1fr 1fr 1fr 0.5fr;
     grid-template-columns: 0.5fr 1fr 1fr 1fr 0.5fr;
   }
+  .herobuttontext2line {
+    padding-right: 27px;
+  }
 }
+
