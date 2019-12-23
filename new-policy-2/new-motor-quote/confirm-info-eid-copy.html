@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!--  Last Published: Wed Dec 18 2019 04:07:47 GMT+0000 (Coordinated Universal Time)  -->
+<!--  Last Published: Mon Dec 23 2019 04:43:27 GMT+0000 (Coordinated Universal Time)  -->
 <html data-wf-page="5dd08ab4c5a7edab98572b2a" data-wf-site="5d94e5f6a633d333a80c6f0e">
 <head>
   <meta charset="utf-8">
@@ -30,7 +30,22 @@
             <h3 class="heading-28">Vehicle Details</h3>
             <div class="w-row">
               <div class="w-col w-col-4">
-                <div class="field-block"><label for="Plate-Category" class="vehicle-value"><span class="text-span-3">Vehicle Value: </span><span class="value">34000 AED</span></label></div>
+                <div class="field-block"><label for="Plate-Category" class="vehicle-value"><span class="text-span-3">Vehicle Value: </span><span class="value">34000 AED</span></label>
+                  <div class="w-embed w-script">
+                    <div class="rangeslider">
+                      <input type="range" min="1" max="100" value="10">
+                      <p>Value: <span id="demo"></span></p>
+                    </div>
+                    <script> 
+var rangeslider = document.getElementById("sliderRange"); 
+var output = document.getElementById("demo"); 
+output.innerHTML = rangeslider.value; 
+rangeslider.oninput = function() { 
+  output.innerHTML = this.value; 
+} 
+</script>
+                  </div>
+                </div>
                 <div class="field-block"><label for="Registration-Date" class="form-field-label">Model</label><select id="field-6" name="field-6" data-name="Field 6" class="select-field-2 w-select"><option value="">Select one...</option><option value="First">First Choice</option><option value="Second">Second Choice</option><option value="Third">Third Choice</option></select></div>
                 <div class="field-block"><label for="Insurance-Expiration-3" class="form-field-label"><span class="text-span-2">* </span>Trim Value</label><input type="number" class="text-field w-input" maxlength="256" name="Insurance-Expiration-3" data-name="Insurance Expiration 3" placeholder="-- / -- / --" id="Insurance-Expiration-3"></div>
                 <div class="field-block"><label for="Chassis-Number" class="form-field-label">Vehicle Usage</label><select id="field" name="field" data-name="Field" class="select-field-2 w-select"><option value="">Select one...</option><option value="First">First Choice</option><option value="Second">Second Choice</option><option value="Third">Third Choice</option></select></div>
